@@ -114,7 +114,6 @@ public class FoodTruckApp {
 				int highestRatedIndex = 0;
 				for (int i = 0; i < foodTruckPark.length; i++) {
 					FoodTruck currentTruck = foodTruckPark[i];
-					System.out.println("currentTruck test: " + currentTruck);
 					if (currentTruck != null) {
 						double currentRating = currentTruck.getRating();
 						System.out.println("currentRating test: " + currentRating);
@@ -122,9 +121,6 @@ public class FoodTruckApp {
 							highestRated = currentTruck.getName();
 							highestRating = currentRating;
 							highestRatedIndex = i;
-							System.out.println("highestRated test: " + highestRated);
-							System.out.println("highestRating test: " + highestRating);
-							System.out.println("highesRatedIndex test: " + i);
 						}
 					}
 				}
